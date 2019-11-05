@@ -48,6 +48,7 @@ h1{
   /* z-index: 999; */
 }
 
+
 @media all and (min-width:1000px){
     .gridcontainer{
         grid-template-columns: 3fr 2fr;

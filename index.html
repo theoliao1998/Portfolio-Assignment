@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/background.css">
     <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"> 
-    <title>Earth - About</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <title>Earth - Home</title>
   </head>
   <body>
-
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <nav>
 
       <ul class="navigation">
@@ -23,25 +28,56 @@
     </nav>
 
     <div class="occupy"></div>
+    <div id="main">
+    <h1>Home Page</h1>
+    <div class="flip-cards-flex">
 
-    <div class="gridcontainer" id="myDiv">
-      <div class="flexcontainer">
-        <div class='text box' tabindex="0" id="P1">
-          P1
+    <div class="flip-card box" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/about/earth.jpg" alt="About Earth">
+          </div>
+          <a class="flip-card-back" href="about.html">
+            About Earth
+          </a>
         </div>
-        <div class='text box' tabindex="0" id="P2">Paragrah 2</div>
-        <div class='text box' tabindex="0" id="P3">Paragrah 3</div>
+      </div>
+    
+      <div class="flip-card box" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/neighbors/jupiter.jpg" alt="Earth's Neighbors">
+          </div>
+          <a class="flip-card-back" href="neighbors.html">
+            Earth's Neighbors
+          </a>
+        </div>
       </div>
 
-        <div class='contenttabel'>
-	         <div class='contenttabel-head'>Content</div>
-	          <a href="#P1" class='contenttabel-body'>Paragrah 1</a>
-            <a href="#P2" class='contenttabel-body'>Paragrah 2</a>
-            <a href="#P3" class='contenttabel-body'>Paragrah 3</a>
+      <div class="flip-card box" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/gallary/protoplanetary-disk.jpg" alt="Gallary">
+          </div>
+          <a class="flip-card-back" href="gallary.html">
+            Gallary
+          </a>
         </div>
+      </div>
 
-    </div>
-
+      <div class="flip-card box" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/others/hurricane_felix.jpg" alt="Others">
+          </div>
+          <a class="flip-card-back" href="others.html">
+            Others
+          </a>
+        </div>
+      </div>
+    
+      </div>
+      </div>
     <div class="occupy"></div>
 
     <footer>
