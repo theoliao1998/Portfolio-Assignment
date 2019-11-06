@@ -28,6 +28,38 @@ body{
   z-index: 10000; */
 }
 
+.isFixed{
+  position: fixed;
+}
+
+header{
+  /* font-size: 300%; */
+  color: white;
+  /* line-height: 250%; */
+  background: linear-gradient(180deg,black,rgba(0,180,220,0.3));
+  line-height: 2em;
+}
+
+.hit-the-floor {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+}
+
 
 
 .here {
@@ -227,7 +259,7 @@ a:active {
   opacity: 1;
   height: 123%;
   overflow: hidden;
-  /* z-index: 999; */
+  z-index: 10000000;
 }
 
 .overview {
@@ -276,6 +308,9 @@ footer p{
   .page{
     white-space:nowrap;
   }
+  a{
+    border-top: none;
+  }
 }
 @media all and (min-width:1000px){
   /* .text > .flexcontainer > .div{
@@ -283,7 +318,7 @@ footer p{
   } */
   .navigation{
     flex-flow: row wrap;
-    position:fixed;
+    /* position:fixed; */
     width: 100%;
     z-index: 10000;
     top:0;
@@ -294,7 +329,7 @@ footer p{
   }
   .navigation a{
     text-align:center;
-    border-top:2px solid rgba(255,255,255,.2);
+    /* border-top:2px solid rgba(255,255,255,.2); */
     border-bottom:2px solid rgba(0,0,0,.1);
   }
 
@@ -319,7 +354,7 @@ footer p{
     position: fixed;
     right:3vw;
     top:23vh;
-    z-index: 10000000;
+    z-index: 1;
   }
 
 

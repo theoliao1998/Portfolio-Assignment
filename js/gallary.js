@@ -4,9 +4,9 @@ $(window).resize(resize);
 
 function resize(){
     
-    if($(window).width()>$(window).height()){
+    if($(window).width()>$(window).height() && $(window).width()>600){
         $("#image").css("width", $(window).width()-3*$(".preview").width());
-        $("#image").css("height", $(window).height()-$(".navigation").height()-$("footer").height());
+        $("#image").css("height", 0.93*($(window).height()-$(".navigation").height()-$("footer").height()-$("header").height()));
     } else{
         $("#image").css("width",$(window).width()*0.9);
         $("#image").css("height",$(window).width()*0.9);
