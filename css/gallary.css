@@ -1,5 +1,5 @@
 .gridcontainer{
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr;
     /* position: fixed; */
     grid-column-gap: 1vw;
 }
@@ -7,7 +7,7 @@
 .preview_gallary{
     display: flex;
     flex-wrap: wrap;
-    grid-column: 2/3;
+    /* grid-column: 2/3; */
     /* height: 200vh; */
     justify-content: space-around;
 
@@ -48,15 +48,18 @@ h1{
   /* z-index: 999; */
 }
 
-
-@media all and (min-width:1000px){
+@media all and (min-width:600px) and (orientation:landscape){
     .gridcontainer{
         grid-template-columns: 3fr 2fr;
         /* position: fixed; */
     }
+    .preview_gallary{
+        grid-column: 2/3;
+        /* height: 200vh; */
+    }
     .preview{
         /* padding-left: 2%; */
-        height: 20vh;
+        height: 15vh;
         opacity: 0.5;
     }
 }
