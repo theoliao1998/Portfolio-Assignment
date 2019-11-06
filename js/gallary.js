@@ -8,8 +8,8 @@ function resize(){
         $("#image").css("width", $(window).width()-3*$(".preview").width());
         $("#image").css("height", $(window).height()-$(".navigation").height()-$("footer").height());
     } else{
-        $("#image").css("width",$(window).width());
-        $("#image").css("height",$(window).width());
+        $("#image").css("width",$(window).width()*0.9);
+        $("#image").css("height",$(window).width()*0.9);
     }
     $(".preview").css("width", $(".preview").height());
 }
