@@ -217,6 +217,7 @@ a:active {
   grid-column-gap: 15px;
   width: auto;
   transition: all 0.2s;
+  -webkit-transition:all 0.2s;
 }
 
 .flexcontainer{
@@ -375,5 +376,27 @@ footer p{
 
   .skip a:focus{
     top:0;
+  }
+
+  .gridcontainer{
+    transition: none;
+    -webkit-transition:none;
+  }
+  
+  .flexcontainer{
+    transition: none;
+    -webkit-transition: none;
+  }
+  
+  .text{
+    transition: none;
+    -webkit-transition: none;
+  }
+  
+  .focused,
+  .text:focus,
+  .text:hover{
+    transition: none;
+    -webkit-transition: none;
   }
 }

@@ -63,3 +63,10 @@ h1{
         opacity: 0.5;
     }
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+   .show{
+    transition: none;
+    -webkit-transition: none;
+   }
+  }

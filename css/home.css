@@ -57,9 +57,29 @@ h1{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    background-color: black;
+    background-size:100% 100%;
+    color: white;
+    line-height: 200px;
   }
+
+  #flip-card-about{
+    background-image: url("../images/about/earth.jpg");
+  }
+
+  #flip-card-neighbors{
+    background-image: url("../images/neighbors/jupiter.jpg");
+  }
+
+  #flip-card-gallary{
+    background-image: url("../images/gallary/protoplanetary-disk.jpg");
+  }
+
+  #flip-card-others{
+    background-image: url("../images/others/hurricane_felix.jpg");
+  }
+
+
 
   .flip-card-front img{
     width: 100%;
@@ -86,7 +106,17 @@ h1{
   }
 
   @media all and (min-width:1000px){
+    .flip-card-front > span{
+      display: none;
+    }
+    
     footer{
       position: fixed;
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    .flip-card-inner {
+      transition: none;
     }
   }
