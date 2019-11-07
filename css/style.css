@@ -131,8 +131,23 @@ h1,p{
   text-align:center;
 }
 
-img{
+/* img{
   height: 50vh;
+} */
+
+
+.img-container{
+  height: 80vh;
+}
+
+#testimg{
+  width:100%;
+  height:100%;
+}
+
+#testimg2{
+  width:100%;
+  height:100%;
 }
 
 .occupy{
@@ -317,6 +332,9 @@ footer p{
   /* .text > .flexcontainer > .div{
     width:30%;
   } */
+  img{
+    height: 50vh;
+  }
   .navigation{
     flex-flow: row wrap;
     /* position:fixed; */

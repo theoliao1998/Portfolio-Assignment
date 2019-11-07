@@ -5,7 +5,7 @@ $(window).resize(resize);
 function resize(){
     
     if($(window).width()>$(window).height() && $(window).width()>600){
-        $("#image").css("width", $(window).width()-3*$(".preview").width());
+        $("#image").css("width", $(window).width()-$(".preview_gallary").width());
         $("#image").css("height", 0.93*($(window).height()-$(".navigation").height()-$("footer").height()-$("header").height()));
     } else{
         $("#image").css("width",$(window).width()*0.9);
