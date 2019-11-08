@@ -10,7 +10,13 @@
     /* grid-column: 2/3; */
     /* height: 200vh; */
     justify-content: space-around;
+    align-content: space-around;
 
+}
+
+#heading{
+    color: white;
+    background: linear-gradient(180deg,rgba(0,180,220,0.3), rgba(255,0,0,0));
 }
 
 .preview{
@@ -54,7 +60,7 @@ h1{
         grid-template-columns: 3fr 2fr;
         /* position: fixed; */
     }
-    .preview_gallary{
+    .preview_container{
         grid-column: 2/3;
         /* height: 200vh; */
     }
