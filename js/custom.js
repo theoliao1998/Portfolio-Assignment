@@ -24,11 +24,17 @@ $(window).resize(function(){
 function reshape(){
 	$(".occupy").css("height", $("footer").height());
 	$("#bottom").css("height", $(window).height()-$("header").height()-$(".navigation").height()-$("#main").height());
-	if ($(window).width() < 1050){
-		$("img:not(.preview)").css("width", "100%");
+	if (($(window).width() < 600)){
+		$("img:not(.preview)").css("max-width", "100%");
 		$("img:not(.preview)").css("height", ($(window).width()/$(window).height()*100).toString(10)+"vh");
 	} else {
 		$("img:not(.preview)").css("height", "50vh");
+		$("img:not(.preview)").css("max-width","55vh");
+		// if ($("#widest").width() / $(window).width() > 0.8){
+		// 	$("#widest").css("flex-direction","column");
+		// } else {
+		// 	$("#widest").css("flex-direction","row");
+		// }
 	}
 }
 
