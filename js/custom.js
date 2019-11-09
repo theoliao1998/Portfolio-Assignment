@@ -1,15 +1,16 @@
 $(document).ready(function() {
-	
-	$("body").css("display", "none");
-	$("body").fadeIn(1000);
 	reshape();
-	// $("li").css("line-height",$("a.page").height());
-
-	$("a.page,a.flip-card-back").click(function(event){
-		event.preventDefault();
-		linkLocation = this.href;
-		$("body").fadeOut(500, redirectPage);		
-	});
+	let pref = window.matchMedia('(prefers-reduced-motion: no-preference)');
+	if (pref.matches==true || pref.media =="not all"){
+		$("body").css("display", "none");
+		$("body").fadeIn(1000);
+	
+		$("a.page,a.flip-card-back").click(function(event){
+			event.preventDefault();
+			linkLocation = this.href;
+			$("body").fadeOut(500, redirectPage);		
+		});
+	}
 		
 	function redirectPage() {
 		window.location = linkLocation;
