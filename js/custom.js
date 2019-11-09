@@ -29,7 +29,7 @@ function reshape(){
 		$("img:not(.preview)").css("height", ($(window).width()/$(window).height()*100).toString(10)+"vh");
 	} else {
 		$("img:not(.preview)").css("height", "50vh");
-		$("img:not(.preview)").css("max-width","55vh");
+		$("img:not(.preview,#overview)").css("max-width","55vh");
 		// if ($("#widest").width() / $(window).width() > 0.8){
 		// 	$("#widest").css("flex-direction","column");
 		// } else {

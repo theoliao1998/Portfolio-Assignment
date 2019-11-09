@@ -9,6 +9,10 @@
     display: none;
 }
 
+#overview{
+    max-width: 100%;
+}
+
 
 @media all and (min-width:600px) and  (orientation:landscape){
     #overview{

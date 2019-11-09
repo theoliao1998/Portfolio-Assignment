@@ -46,6 +46,10 @@ button.btn{
     background: #38597c;
 }
 
+label{
+  width:5vw;
+}
+
 i{
   width:5vw;
 }
