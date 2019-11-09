@@ -1,3 +1,25 @@
+.overview {
+    margin: 0 auto;
+    width: 100%;
+    height: 0;
+    padding-bottom: 30%;
+    background-image: url(../images/neighbors/overview.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+    display: none;
+}
+
+
+@media all and (min-width:600px) and  (orientation:landscape){
+    #overview{
+        display: none;
+    }
+    .overview{
+        display: block;
+    }
+}
+  
+
 @media all and (min-width:1050px){
     .contenttabel{
         top:15vh;
